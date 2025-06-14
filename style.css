@@ -5,11 +5,13 @@ h1,h2{
 
 .btn-container{
     display: flex;
+    justify-content: center;
 }
 
 .btn{
     height: 200px;
     width: 200px;
-    border: 2px solid black;
+    border: 7px solid black;
     border-radius: 20%;
+    margin: 14px;
 }
