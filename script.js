@@ -16,9 +16,14 @@ document.addEventListener("keypress",function(){
 function levelup() {
     level++;
     head2.innerText=`level ${level}`;
-
+    
+    let randIndx=Math.floor(Math.random()*3);
+    let randColor=colors[randIndx];
+    let randBtn = document.querySelector(`.${randColor}`);
+    gameFlash(randBtn);
 }
 
-function getRandomColor() {
-     let number = Math.floor(Math.random()*3);
+function gameFlash(btn) {
+  btn.classList.add("flash")
 }
+
