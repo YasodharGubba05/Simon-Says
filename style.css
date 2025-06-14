@@ -3,10 +3,13 @@ h1,h2{
     justify-content: center;
 }
 
-.box{
-    height: 100px;
-    width: 100px;
+.btn-container{
+    display: flex;
+}
+
+.btn{
+    height: 200px;
+    width: 200px;
     border: 2px solid black;
     border-radius: 20%;
-    display: flex;
 }
