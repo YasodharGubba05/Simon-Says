@@ -20,10 +20,16 @@ function levelup() {
     let randIndx=Math.floor(Math.random()*3);
     let randColor=colors[randIndx];
     let randBtn = document.querySelector(`.${randColor}`);
+    console.log(randColor);
     gameFlash(randBtn);
+
 }
 
 function gameFlash(btn) {
-  btn.classList.add("flash")
+  btn.classList.add("flash");
+   setTimeout(function () {
+    btn.classList.remove("flash");
+  }, 250);
 }
+
 
